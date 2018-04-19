@@ -1,7 +1,7 @@
 {
     "name": "lk-vue-cli",
     "version": "1.0.0",
-    "description": "project description",
+    "description": "vue app generator tools",
     "main": "bin/lk-vue",
     "bin": {
         "lk-vue": "./bin/lk-vue"
