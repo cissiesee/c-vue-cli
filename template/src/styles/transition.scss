@@ -1,0 +1,71 @@
+//globl transition css
+
+$duration: 400ms;
+$backPercent: 40%;
+$enterPercent: 100%;
+#app {
+    width: 100%;
+    height: 100%;
+    -webkit-overflow-scrolling: touch;
+
+
+    /*fade*/
+    .fade-enter-active,
+    .fade-leave-active {
+      transition: opacity 0.28s;
+    }
+
+    .fade-enter,
+    .fade-leave-active {
+      opacity: 0;
+    }
+
+    /*slide*/
+    .slide-left-enter {
+        transform: translate($enterPercent, 0);
+     }
+
+     .slide-left-enter-active,.slide-right-enter-active {
+        transition: transform $duration ease;
+     }
+
+     .slide-left-enter-to,.slide-right-enter-to {
+        transform: translate(0, 0);
+     }
+
+     .slide-left-leave {
+        transform: translate(0, 0);
+     }
+
+     .slide-left-leave-active {
+        transition: transform $duration ease;
+     }
+
+     .slide-left-leave-to {
+        transform: translate(-$backPercent, 0);
+      }
+
+      .slide-right-enter {
+        transform: translate(-$enterPercent, 0);
+      }
+
+     .slide-right-leave {
+        transform: translate(0, 0);
+     }
+
+     .slide-right-leave-active {
+        transition: transform $duration ease;
+     }
+
+     .slide-right-leave-to {
+        transform: translate($backPercent, 0);
+     }
+
+    .child-view {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+   }
+}
+
