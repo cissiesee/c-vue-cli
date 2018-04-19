@@ -1,6 +1,6 @@
 {
     "name": "lk-vue-cli",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "project description",
     "main": "bin/lk-vue",
     "bin": {
