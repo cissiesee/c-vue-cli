@@ -97,7 +97,7 @@ function mkdir(dir, callback) {
 // destFile以目标根地址为参照
 // srcFile以源地址template目录为参照
 function copyFile(destFile, srcFile, callback) {
-	fs.copy(path.join(__dirname, "..", "template", srcFile), path.join(destinationPath, destFile), function (err) {
+	fs.copy(path.join(__dirname, "..", "template", srcFile), path.join(programOptions.dir, destFile), function (err) {
 		callback(err);
 	});
 }
